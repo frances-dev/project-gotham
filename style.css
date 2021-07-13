@@ -104,8 +104,24 @@ nav ul, .main-footer ul{
     font-family: Proxima;
     color: black;
     text-decoration: none;
-    padding: 0 35px;
+    padding: 7px 35px 7px;
     font-weight: 500;
+}
+
+.navbar nav a:hover{
+    background-color: whitesmoke;
+    color: rgb(192, 157, 0);
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 
 /* =========== Main Body ===========*/
@@ -240,6 +256,16 @@ main .left{
     -o-border-radius: 5px;
 }
 
+.more:hover{
+    background-color: hsl(46, 98%, 57%);
+    color: white;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
 /* =========== Main Body ===========*/
 /* =========== Right Part ===========*/
 .right{
@@ -349,7 +375,40 @@ table:last-child td{
     height: 38px;
 }
 
+.popular-news{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 
+}
+
+.popular-news h2{
+    font-family: Roboto;
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.popular-news h2::after{
+    content: ".";
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 1.4px solid #e5e5e5;
+    margin-left: 10px;
+}
+
+.popular-news article h3{
+    font-family: Roboto;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
 
 /* =========== Footer ===========*/
 .footer{
